@@ -28,4 +28,12 @@ export class UserService {
       return user;
     }
   }
+
+  async getAll(): Promise<User[]> {
+    return await this.userRepository.findAll();
+  }
+
+  async getUser(userId: number): Promise<User> {
+    return await this.userRepository.findOne({ id: userId });
+  }
 }
