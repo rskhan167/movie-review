@@ -1,23 +1,23 @@
 export class CreateUserRO {
-  is_success: boolean;
-  data: UserData;
+  isSuccess: boolean;
+  data: UserRO;
 
-  constructor(isSuccess: boolean, data: UserData) {
-    this.is_success = isSuccess;
-    this.data = new UserData(data);
+  constructor(isSuccess: boolean, data: UserRO) {
+    this.isSuccess = isSuccess;
+    this.data = new UserRO(data);
   }
 }
 
-export class UserData {
+export class UserRO {
   id: number;
   name: string;
   email: string;
-  profile_image: string;
+  profileImage: string;
 
-  constructor(data: UserData) {
+  constructor(data: UserRO) {
     this.id = data.id;
     this.name = data.name;
     this.email = data.email;
-    this.profile_image = data.profile_image;
+    this.profileImage = data.profileImage;
   }
 }

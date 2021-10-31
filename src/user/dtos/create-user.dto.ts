@@ -14,5 +14,5 @@ export class CreateUserDto {
   password: string;
 
   @IsOptional()
-  profile_image: string;
+  profileImage: string;
 }

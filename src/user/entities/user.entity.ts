@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import { Property, Entity, Unique, PrimaryKey } from '@mikro-orm/core';
 import { IsEmail } from 'class-validator';
 

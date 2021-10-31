@@ -6,7 +6,7 @@
       {
         "name": "@nestjs/swagger/plugin",
         "options": {
-          "dtoFileNameSuffix": [".entity.ts", ".dto.ts"],
+          "dtoFileNameSuffix": [".entity.ts", ".dto.ts", ".ro.ts"],
           "controllerFileNameSuffix": [".controller.ts"]
         }
       }
